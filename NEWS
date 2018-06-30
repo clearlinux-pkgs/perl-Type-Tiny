@@ -1,0 +1,32 @@
+=======================================================================
+   This file contains a high-level summary of changes between recent
+   stable releases of Type-Tiny. For a more detailed list, including
+   changes in development releases, see the "Changes" file instead.
+=======================================================================
+
+2014-07-18 Type-Tiny version 0.046 released!
+
+ - Support for Type::Tiny::XS.
+ - Test case improvements.
+
+2014-08-16 Type-Tiny version 1.000000 released!
+
+ - Enhanced support for Type::Tiny::XS.
+ - More test case improvements.
+ - Saner implementations of slurpy and Optional within Tuples and Dicts.
+ - More aggressive at freezing coercions.
+ - Better behaviour of non-frozen coercions.
+   (For example, they are no longer considered to be inlineable.)
+ - Better integration between Type::Library and Type::Registry.
+
+2017-06-01 Type-Tiny version 1.002000 released!
+
+ - Type::Params now has `compile_named` and `validate_named`.
+ - Type::Tiny's `constraint` parameter may be a string of code.
+ - Types::Standard::CycleTuple added.
+ - Types::Standard::RegexpRef now accepts blessed objects where
+   $object->isa('Regexp'). This plays better with re::engine::*
+   pragmas.
+ - Fixed bug where Types::Standard::Int would *sometimes* accept
+   an overloaded object. (It never should.)
+ - Various performance enhancements and bug fixes.
