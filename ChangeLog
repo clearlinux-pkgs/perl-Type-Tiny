@@ -6,7 +6,19 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
-1.004000	2018-07-26
+1.004001	2018-07-28
+
+ [ Bug Fixes ]
+ - Add Eval::TypeTiny::Sandbox to the list of packages which should be
+   skipped as internal by Error::TypeTiny, as it was mistakenly removed in
+   1.003_008.
+   Fixes RT#125942.
+   <https://rt.cpan.org/Ticket/Display.html?id=125942>
+
+ [ Documentation ]
+ - Correct release date of 1.004000 in change log.
+
+1.004000	2018-07-27
 
  [ Documentation ]
  - Update NEWS.
@@ -39,6 +51,9 @@ Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
 1.003_008	2018-07-16
 
+ [ REGRESSIONS ]
+ - Make Error::TypeTiny aware of some newer internal modules.
+
  [ Bug Fixes ]
  - Fix error messages generating deep explanations of some parameterized
    types.
@@ -60,7 +75,6 @@ Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
  - Types::Common::Numeric's IntRange and NumRange do better checking of
    parameters.
  - Types::Common::String's StrLength does better checking of parameters.
- - Updated: Make Error::TypeTiny aware of some newer internal modules.
 
 1.003_007	2018-07-12
 
