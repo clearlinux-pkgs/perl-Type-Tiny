@@ -6,6 +6,14 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+1.004002	2018-07-29
+
+ [ Bug Fixes ]
+ - Skip one particular test on old versions of Moo because it relies on a
+   feature introduced in Moo 1.004000.
+   Fixes RT#125948.
+   <https://rt.cpan.org/Ticket/Display.html?id=125948>
+
 1.004001	2018-07-28
 
  [ Bug Fixes ]
