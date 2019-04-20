@@ -4,7 +4,7 @@
 #
 Name     : perl-Type-Tiny
 Version  : 1.004004
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.004004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.004004.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libt/libtype-tiny-perl/libtype-tiny-perl_1.002001-1.debian.tar.xz
