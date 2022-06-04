@@ -4,7 +4,7 @@
 #
 Name     : perl-Type-Tiny
 Version  : 1.012004
-Release  : 44
+Release  : 45
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.012004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-1.012004.tar.gz
 Summary  : 'tiny, yet Moo(se)-compatible type constraint'
@@ -81,6 +81,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Type-Tiny
+cp %{_builddir}/Type-Tiny-1.012004/COPYRIGHT %{buildroot}/usr/share/package-licenses/perl-Type-Tiny/c44a0e4ad23884dca183fc9dad73b866a6219c55
 cp %{_builddir}/Type-Tiny-1.012004/LICENSE %{buildroot}/usr/share/package-licenses/perl-Type-Tiny/314b5ed5370f5eb5b7e186d7f095c1c12060a731
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
@@ -158,63 +159,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Type-Tiny/314b5ed5370f5eb5b7e186d7f095c1c12060a731
+/usr/share/package-licenses/perl-Type-Tiny/c44a0e4ad23884dca183fc9dad73b866a6219c55
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Devel/TypeTiny/Perl56Compat.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Devel/TypeTiny/Perl58Compat.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Error/TypeTiny.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Error/TypeTiny/Assertion.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Error/TypeTiny/Compilation.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Error/TypeTiny/WrongNumberOfParameters.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Eval/TypeTiny.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Reply/Plugin/TypeTiny.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Test/TypeTiny.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Coercion.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Coercion/FromMoose.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Coercion/Union.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Library.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Params.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Parser.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Registry.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Class.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/ConstrainedObject.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Duck.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Enum.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Intersection.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/AllTypes.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Coercions.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Contributing.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Installation.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Libraries.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/NonOO.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Optimization.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Params.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/Policies.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithClassTiny.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithMoo.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithMoo2.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithMoo3.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithMoose.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithMouse.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithOther.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Manual/UsingWithTestMore.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Role.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/Union.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Tiny/_HalfOp.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Type/Utils.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Common/Numeric.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Common/String.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/ArrayRef.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/CycleTuple.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/Dict.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/HashRef.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/Map.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/ScalarRef.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/StrMatch.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/Tied.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/Standard/Tuple.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Types/TypeTiny.pm
+/usr/lib/perl5/*
