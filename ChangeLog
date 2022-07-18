@@ -7,6 +7,14 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <https://github.com/tobyink/p5-type-tiny/issues>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+1.016001	2022-07-18
+
+ - Allow Type::Utils::extends to extend Type::Library::Compiler libraries.
+ - Allow the add_types method of Type::Registry to consume
+   Type::Library::Compiler libraries.
+ - Improved coercion of Type::Library::Compiler's type constraints to
+   Type::Tiny.
+
 1.016000	2022-07-16
 
  - Add a clone option to parameters in Type::Params to clone them with
