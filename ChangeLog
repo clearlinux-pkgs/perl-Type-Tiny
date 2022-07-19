@@ -7,6 +7,15 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <https://github.com/tobyink/p5-type-tiny/issues>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+1.016002	2022-07-19
+
+ [ BACK COMPAT ]
+ - The slurpy(Foo) function from Types::Standard has been replaced by a new
+   Slurpy parameterized type, so you can use Slurpy[Foo] instead. A
+   slurpy() function is still provided for backwards compatibility, but if
+   you were relying on the internal detail that this used to return an
+   unblessed hashref, this release might break that assumption.
+
 1.016001	2022-07-18
 
  - Allow Type::Utils::extends to extend Type::Library::Compiler libraries.
