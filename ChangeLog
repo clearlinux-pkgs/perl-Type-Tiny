@@ -7,6 +7,22 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <https://github.com/tobyink/p5-type-tiny/issues>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+1.016005	2022-07-23
+
+ [ Bug Fixes ]
+ - Minor bugfix in Type::Tiny::cmp where in some cases it was returning '0'
+   instead of '0E0'; unlikely to affect anything.
+
+ [ Other ]
+ - Updated: Updated Type::Params benchmarking scripts.
+ - When Type::Registry/Type::Parser has to create a class or role type
+   constraint, use Types::Standard InstanceOf/ConsumerOf instead of
+   creating new anonymous Type::Tiny::Class/Type::Tiny::Role constraints.
+
+1.016004	2022-07-22
+
+ - Added: Type::Params now allows named parameters to have aliases.
+
 1.016003	2022-07-22
 
  - Catalyst was relying on the internals of the old slurpy function. Next
