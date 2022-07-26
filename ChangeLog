@@ -7,6 +7,15 @@ Home page:    <https://metacpan.org/release/Type-Tiny>
 Bug tracker:  <https://github.com/tobyink/p5-type-tiny/issues>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+1.016006	2022-07-25
+
+ [ Documentation ]
+ - Added a new page to the manual: Type::Tiny::Manual::UsingWithMite.
+
+ [ Other ]
+ - Type::Tiny now overloads 0+ to return a unique number per type
+   constraint.
+
 1.016005	2022-07-23
 
  [ Bug Fixes ]
