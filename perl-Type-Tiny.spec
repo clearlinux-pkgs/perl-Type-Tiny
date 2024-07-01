@@ -5,7 +5,7 @@
 #
 Name     : perl-Type-Tiny
 Version  : 2.004000
-Release  : 65
+Release  : 66
 URL      : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-2.004000.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-2.004000.tar.gz
 Summary  : 'tiny, yet Moo(se)-compatible type constraint'
